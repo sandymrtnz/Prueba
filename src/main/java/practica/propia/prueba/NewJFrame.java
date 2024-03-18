@@ -175,39 +175,32 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTotalActionPerformed
 
     private void jbSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSumaActionPerformed
-
-        num1=Double.parseDouble(txtNum1.getText());
-        num2=Double.parseDouble(txtNum2.getText());
-        
+        obtenerNumeros();
         total = num1 + num2;
         
         txtTotal.setText(String.valueOf(total));   
     }//GEN-LAST:event_jbSumaActionPerformed
 
     private void jbRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbRestaActionPerformed
-        num1=Double.parseDouble(txtNum1.getText());
-        num2=Double.parseDouble(txtNum2.getText());
-        
+        obtenerNumeros();
         total = num1 - num2;
-        
         txtTotal.setText(String.valueOf(total));  
     }//GEN-LAST:event_jbRestaActionPerformed
 
     private void jbDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDividirActionPerformed
-       num1=Double.parseDouble(txtNum1.getText());
-        num2=Double.parseDouble(txtNum2.getText());
-        
+        obtenerNumeros();
         total = num1 / num2;
-        
         txtTotal.setText(String.valueOf(total));  
     }//GEN-LAST:event_jbDividirActionPerformed
 
-    private void jbMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbMultiplicarActionPerformed
+    private void obtenerNumeros(){
         num1=Double.parseDouble(txtNum1.getText());
         num2=Double.parseDouble(txtNum2.getText());
-        
+    }
+            
+    private void jbMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbMultiplicarActionPerformed
+        obtenerNumeros();
         total = num1 * num2;
-        
         txtTotal.setText(String.valueOf(total));  
     }//GEN-LAST:event_jbMultiplicarActionPerformed
 
